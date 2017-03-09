@@ -8,6 +8,26 @@
 	h3 {
 		font-size: 18px;
 	}
+	.textTitle {
+		font-size: 35px;
+	}
+	/*banner*/
+	#carouselVideo{
+		height: 500px;
+	}
+	.carouselCaption h1 {
+		font-size: 60px;
+	}
+	.carouselCaption button {
+		font-size: 18px;
+	}
+	/*how it work*/
+	.howItWork .sectionText {
+	    padding-right: 0;
+	}
+	.howItWork .sectionText .textTitle {
+	    margin-top: 5%;
+	}
 }
 @media (max-width: 767px) {
 	h1 {
@@ -19,6 +39,23 @@
 	h3 {
 		font-size: 15px;
 	}
+	.textTitle {
+		font-size: 30px;
+	}
+	/*banner*/
+	#carouselVideo{
+		height: 450px;
+	}
+	.carouselCaption h1 {
+		font-size: 40px;
+	}
+	.carouselCaption button {
+		font-size: 16px;
+	}
+	/*how it work*/
+	.howItWork>div {
+	    width: 100% !important;
+	}
 }
 @media (max-width: 577px) {
 	h1 {
@@ -29,5 +66,39 @@
 	}
 	h3 {
 		font-size: 14px;
+	}
+	.textTitle {
+		font-size: 26px;
+	}
+	/*banner*/
+	#carouselVideo{
+		height: 400px;
+	}
+	.carouselCaption h1 {
+		font-size: 30px;
+	}
+	.carouselCaption button {
+		font-size: 14px;
+	}
+
+	/*about*/
+	.sectionAbout .aboutInner .aboutPart {
+		padding: 8% 10px;
+	}
+	.aboutStatistic .statistic .statisticLeft,
+	.aboutStatistic .statistic .statisticRight {
+		width: 230px;
+		height: 230px;
+	}
+	.aboutStatistic .statistic h1 {
+	    font-size: 50px;
+	    margin-top: 20px;
+	}
+
+	/*team*/
+	.teamInner .teamGroup .teamMember{
+		width: 90%;
+		display: inline-block;
+		float: none;
 	}
 }
