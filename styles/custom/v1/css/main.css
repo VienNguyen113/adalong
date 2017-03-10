@@ -185,6 +185,45 @@ aside a:focus, aside a:active {
 	color: #888;
 }
 
+#media {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.wrapMedia {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+	opacity: 0.8;
+}
+.media {
+	width: 350px;
+	height: 200px;
+	position: absolute;
+	display: inline-block;
+}
+.media1 {
+	background: url(../images/media1.jpg) transparent no-repeat center center/contain;
+	top: 42%;
+	left: 50px;
+	transform: rotate(20deg);
+}
+.media2 {
+	background: url(../images/media2.jpg) transparent no-repeat center center/contain;
+	top: -60px;
+	left: calc(50% - 200px);
+	transform: rotate(-20deg);
+}
+.media3 {
+	background: url(../images/media3.jpg) transparent no-repeat center center/contain;
+	top: 30%;
+	right: 120px;
+	transform: rotate(-20deg);
+}
+
 /*== banner ==*/
 #pageDown {
 	width: 40px;
@@ -349,16 +388,16 @@ aside a:focus, aside a:active {
 	display: inline-block;
 	max-width: 600px;
 	width: 100%;
-	padding: 5% 0;
+	padding: 10% 0;
 }
 
 /*== get in touch form ==*/
 .contactContainer {
-	background: #eeeeee;
+	/*background: #eeeeee;*/
 	text-align: center;
 }
 .contactContainer .contactInner {
-	padding: 20% 0;
+	padding: 30% 0;
 }
 .contactContainer .contactInner h3 {
 	font-size: 30px;
