@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Landing Page</title>
+	<title>Adalong</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
@@ -9,8 +9,6 @@
 	<script type="text/javascript" src="styles/vendor/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="styles/vendor/js/tether-1.3.3.min.js"></script>
 	<script type="text/javascript" src="styles/vendor/js/bootstrap-v4-anpha6.min.js"></script>
-	<!-- Custom js -->
-	<script type="text/javascript" src="styles/custom/v1/js/main.js"></script>
 
 	<!-- Vendor css -->
 	<link rel="stylesheet" type="text/css" href="styles/vendor/css/bootstrap-v4-anpha6.min.css">
@@ -20,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/custom/v1/css/main-media.css">
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="container">
 			<div class="row">
 				<div class="header-inner w-100">
@@ -34,34 +32,40 @@
 						<div class="collapse navbar-collapse" id="navbarHeaderLink">
 							<ul class="navbar-nav ml-auto">
 								<li class="nav-item">
-									<a class="nav-link" href="#"><span>About</span></a>
+									<a class="nav-link linkScroll" data-target="sectionAbout" href="#"><span>About</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#"><span>How it works</span></a>
+									<a class="nav-link linkScroll" data-target="sectionHowItWork" href="#"><span>How it works</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#"><span>The team</span></a>
+									<a class="nav-link linkScroll" data-target="sectionTeam" href="#"><span>The team</span></a>
 								</li>
 							</ul>
 						</div>
 					</nav>
-					
-					<div class="fixedHeaderContent w-100 clearfix">
-						<a href="#" id="fixedLogo">
-							<img src="styles/custom/v1/images/logo_fixed_dark.png">
-							<img class="imgLogoWhite" src="styles/custom/v1/images/logo_fixed_white.png">
-						</a>
-						<button data-target="section-get-in-touch" class="btnNormal btnGetInTouch">GET IN TOUCH</button>
-					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
+	<div id="headerFixed">
+		<div class="container">
+			<div class="row">
+				<div class="fixedHeaderContent w-100 clearfix">
+					<a href="#" id="fixedLogo" class="linkScroll" data-target="header">
+						<img src="styles/custom/v1/images/logo_fixed_dark.png">
+						<img class="imgLogoWhite" src="styles/custom/v1/images/logo_fixed_white.png">
+					</a>
+					<button data-target="getInTouchForm" class="btnNormal btnGetInTouch linkScroll">GET IN TOUCH</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<aside>
-		<a href="#">About</a>
-		<a href="#">How it works</a>
-		<a href="#">The team</a>
+		<a class="linkScroll" data-target="sectionAbout" href="#">About</a>
+		<a class="linkScroll" data-target="sectionHowItWork" href="#">How it works</a>
+		<a class="linkScroll" data-target="sectionTeam" href="#">The team</a>
 	</aside>
 
 	<div id="carouselVideo" class="bannerSlide">
@@ -77,7 +81,7 @@
 				<div class="carouselCaption">
 					<h1>YOUR CONSUMER IS YOUR NEW CREATIVE</h1>
 					<h2>Share the videos of your audience</h2>
-					<button class="btn btn-normal btn-primary btn-lg btnBlue btnNormal">GET IN TOUCH</button>
+					<button class="btn btn-normal btn-primary btn-lg btnBlue btnNormal linkScroll" data-target="getInTouchForm">GET IN TOUCH</button>
 				</div>
 			</div>
 			<div class="carousel-item " slide-id="1" style="opacity: 0;">
@@ -85,7 +89,7 @@
 				<div class="carouselCaption">
 					<h1>YOUR CONSUMER IS YOUR NEW CREATIVE</h1>
 					<h2>Share the videos of your audience</h2>
-					<button class="btn btn-normal btn-primary btn-lg btnBlue btnNormal">GET IN TOUCH</button>
+					<button class="btn btn-normal btn-primary btn-lg btnBlue btnNormal linkScroll" data-target="getInTouchForm">GET IN TOUCH</button>
 				</div>
 			</div>
 			<div class="carousel-item" slide-id="2" style="opacity: 0;">
@@ -93,7 +97,7 @@
 				<div class="carouselCaption">
 					<h1>YOUR CONSUMER IS YOUR NEW CREATIVE</h1>
 					<h2>Share the videos of your audience</h2>
-					<button class="btn btn-normal btn-primary btn-lg btnBlue btnNormal">GET IN TOUCH</button>
+					<button class="btn btn-normal btn-primary btn-lg btnBlue btnNormal linkScroll" data-target="getInTouchForm">GET IN TOUCH</button>
 				</div>
 			</div>
 			<div class="carousel-item" slide-id="3" style="opacity: 0;">
@@ -101,13 +105,13 @@
 				<div class="carouselCaption">
 					<h1>YOUR CONSUMER IS YOUR NEW CREATIVE</h1>
 					<h2>Share the videos of your audience</h2>
-					<button class="btn btn-normal btn-primary btn-lg btnBlue btnNormal">GET IN TOUCH</button>
+					<button class="btn btn-normal btn-primary btn-lg btnBlue btnNormal linkScroll" data-target="getInTouchForm">GET IN TOUCH</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="sectionAbout">
+	<div id="sectionAbout" class="sectionAbout">
 		<div class="container">
 			<div class="row">
 				<div class="aboutInner">
@@ -144,7 +148,7 @@
 		</div>
 	</div>
 
-	<div class="sectionHowItWork">
+	<div id="sectionHowItWork" class="sectionHowItWork">
 		<div class="container">
 			<div class="row">
 				<div class="howItWorkInner">
@@ -180,26 +184,26 @@
 		</div>
 	</div>
 
-	<div class="sectionTeam">
+	<div id="sectionTeam" class="sectionTeam">
 		<div class="container">
 			<div class="row">
 				<div class="teamInner">
 					<div class="teamGroup clearfix">
 						<h2 class="textTitle">THE TEAM</h2>
 						<div class="teamMember">
-							<img src="styles/custom/v1/images/user.png">
+							<img src="styles/custom/v1/images/ymele.png">
 							<h4>Michael Ymele</h4>
 							<h4>CTO</h4>
 						</div>
 						<div class="teamMember">
-							<img src="styles/custom/v1/images/user.png">
-							<h4>Michael Ymele</h4>
-							<h4>CTO</h4>
+							<img src="styles/custom/v1/images/demerlliac.png">
+							<h4>Clemence Demerlliac</h4>
+							<h4>CEO</h4>
 						</div>
 						<div class="teamMember">
-							<img src="styles/custom/v1/images/user.png">
-							<h4>Michael Ymele</h4>
-							<h4>CTO</h4>
+							<img src="styles/custom/v1/images/stuart.png">
+							<h4>Jonathan Stuart</h4>
+							<h4>COO, Creative Director</h4>
 						</div>
 					</div>
 					<div class="teamContent">
@@ -220,7 +224,7 @@
 		</div>
 	</div>
 
-	<div class="contactContainer">
+	<div id="getInTouchForm" class="contactContainer">
 		<div class="container">
 			<div class="row">
 				<div class="contactInner w-100">
@@ -253,4 +257,7 @@
 			</div>
 		</div>
 	</footer>
+	<!-- Custom js -->
+	<script type="text/javascript" src="styles/custom/v1/js/main.js"></script>
+</body>
 </html>

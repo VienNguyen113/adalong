@@ -71,12 +71,77 @@ header button.navbar-toggler {
 	margin-top: 10px;
 }
 /*When scroll down*/
-header.fixedHeader {
+#headerFixed {
+	min-height: 120px;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 100;
+	background: transparent;
+	display: none;
+	z-index: 99;
+}
+.fixedHeaderContent {
+	display: block;
+}
+.fixedHeaderContent {
+	background: transparent;
+	padding: 30px 10px;
+	display: block;
+}
+.fixedHeaderContent #fixedLogo {
+	float: left;
+}
+.fixedHeaderContent .btnGetInTouch {
+	float: right;
+	border: 2px solid #0a090e;
+	color: #0a090e;
+	border-radius: 30px;
+	line-height: 46px;
+	height: 50px;
+	padding: 0 40px;
+	background: transparent;
+	cursor: pointer;
+	margin-top: 5px;
+	font-weight: 600;
+}
+.fixedHeaderContent .btnGetInTouch:focus { 
+	outline: 0;
+}
+.fixedHeaderContent .btnGetInTouch:hover {
+	background: #0a090e;
+	color: #fff;
+	cursor: pointer;
+	outline: 0;
+}
+#fixedLogo {
+	height: 60px;
+}
+.fixedHeaderContent img {
+	height: 100%;
+}
+.imgLogoWhite {
+	display: none;
+}
+#headerFixed.darkHeader img {
+	display: none;
+}
+#headerFixed.darkHeader .imgLogoWhite {
+	display: block;
+}
+#headerFixed.darkHeader .fixedHeaderContent .btnGetInTouch {
+	color: #fff;
+	border-color: #fff;
+}
+/*header.fixedHeader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background: transparent;
 }
 header.fixedHeader nav {
 	display: none;
@@ -122,17 +187,19 @@ header.fixedHeader.darkHeader .imgLogoWhite {
 header.fixedHeader.darkHeader .fixedHeaderContent .btnGetInTouch {
 	color: #fff;
 	border-color: #fff;
-}
+}*/
 
 /*== sidebar ==*/
 aside {
 	width: 360px;
     height: 80px;
     position: fixed;
+    z-index: 100;
     top: calc(50% - 40px);
     right: -140px;
     z-index: 99;
     transform: rotate(90deg);
+    display: none;
 }
 aside a {
 	color: #000;
@@ -141,8 +208,14 @@ aside a {
 	margin: 0 5px;
 	font-size: 18px;
 }
-aside a:hover, aside a:focus, aside a:active {
-	color: #1b338c;
+aside a:hover, aside a.active {
+	opacity: 0.9;
+	color: #888;
+	text-decoration: none;
+}
+aside a:focus, aside a:active {
+	text-decoration: none;
+	color: #888;
 }
 
 /*== banner ==*/
@@ -297,7 +370,7 @@ aside a:hover, aside a:focus, aside a:active {
 	text-align: center;
 }
 .contactContainer .contactInner {
-	padding: 10% 0;
+	padding: 20% 0;
 }
 .contactContainer .contactInner h3 {
 	font-size: 30px;
