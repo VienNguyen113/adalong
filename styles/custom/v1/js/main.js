@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	// $(window).scrollTop = 0;
 
 	$('#carouselVideo ol li').click(function () {
 		if(!$('#carouselVideo ol li').hasClass('onActive')) {
