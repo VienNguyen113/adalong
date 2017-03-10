@@ -56,6 +56,12 @@
 	.howItWork>div {
 	    width: 100% !important;
 	}
+	.sectionTextLeft {
+		display: block;
+	}
+	.sectionTextRight {
+		display: none;
+	}
 }
 @media (max-width: 577px) {
 	h1 {

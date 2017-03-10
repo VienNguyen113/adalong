@@ -9,6 +9,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	color: #0a090e;
+	background: #5778f1;
 }
 .textTitle {
 	text-transform: initial;
@@ -38,6 +39,25 @@ body {
 .btnBlue:hover, .btnBlue:focus, .btnBlue:active {
 	background: #fff;
 	color: #01549b;
+	outline: 0;
+}
+.bg-color-blue {
+	background-color: #0438f9;
+	-webkit-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
+}
+.bg-color-pink {
+	background-color: #f2194c;
+	-webkit-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
+}
+.bg-color-gray {
+	background-color: #eee;
+	-webkit-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
 }
 /*== End common ==*/
 
@@ -135,59 +155,6 @@ header button.navbar-toggler {
 	color: #fff;
 	border-color: #fff;
 }
-/*header.fixedHeader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 100;
-	background: transparent;
-}
-header.fixedHeader nav {
-	display: none;
-}
-header.fixedHeader .fixedHeaderContent {
-	display: block;
-}
-header.fixedHeader .fixedHeaderContent {
-	background: transparent;
-	padding: 30px 10px;
-	display: block;
-}
-header.fixedHeader .fixedHeaderContent #fixedLogo {
-	float: left;
-}
-header.fixedHeader .fixedHeaderContent .btnGetInTouch {
-	float: right;
-	border: 1px solid #0a090e;
-	color: #0a090e;
-	border-radius: 30px;
-	line-height: 48px;
-	height: 50px;
-	padding: 0 40px;
-	background: transparent;
-	cursor: pointer;
-	margin-top: 5px;
-}
-header.fixedHeader #fixedLogo {
-	height: 60px;
-}
-header.fixedHeader .fixedHeaderContent img {
-	height: 100%;
-}
-header.fixedHeader .imgLogoWhite {
-	display: none;
-}
-header.fixedHeader.darkHeader img {
-	display: none;
-}
-header.fixedHeader.darkHeader .imgLogoWhite {
-	display: block;
-}
-header.fixedHeader.darkHeader .fixedHeaderContent .btnGetInTouch {
-	color: #fff;
-	border-color: #fff;
-}*/
 
 /*== sidebar ==*/
 aside {
@@ -216,6 +183,21 @@ aside a:hover, aside a.active {
 aside a:focus, aside a:active {
 	text-decoration: none;
 	color: #888;
+}
+
+/*== banner ==*/
+#pageDown {
+	width: 40px;
+	height: 40px;
+	background: url('../images/arrow_down.png') transparent no-repeat center center/100%;
+	cursor: pointer;
+	position: fixed;
+	z-index: 100;
+	left: calc(50% - 20px);
+	bottom: 10px;
+}
+.pageUp {
+	transform: rotate(180deg);
 }
 
 /*== banner ==*/
@@ -269,7 +251,7 @@ aside a:focus, aside a:active {
 
 /*== About ==*/
 .sectionAbout {
-	background: #0438f9;
+	/*background: #0438f9;*/
 	color: #fff;
 }
 .sectionAbout .aboutInner {
@@ -292,17 +274,20 @@ aside a:focus, aside a:active {
 .aboutStatistic .statistic .statisticRight {
 	width: 300px;
 	height: 300px;
-	border: 12px solid #fff;
 	border-radius: 100%;
 	margin: 15px;
 	display: inline-block;
 	position: relative;
 	text-align: center;
+	background: url(../images/statistic_92.png) transparent no-repeat center center/100%;
+}
+.aboutStatistic .statistic .statisticRight {
+	background: url(../images/statistic_85.png) transparent no-repeat center center/100%;
 }
 .aboutStatistic .statistic h1 {
 	font-size: 70px;
 	font-weight: bold;
-	margin-top: 40px;
+	margin-top: 55px;
 }
 .aboutStatistic .statistic p {
 	width: 80%;
@@ -311,7 +296,7 @@ aside a:focus, aside a:active {
 
 /*== how it works ==*/
 .sectionHowItWork {
-	background: #eee;
+	/*background: #eee;*/
 }
 .howItWorkInner {
 	padding: 8% 15px;
@@ -326,6 +311,9 @@ aside a:focus, aside a:active {
 .howItWork .sectionText {
 	padding-right: 15%;
 }
+.sectionTextLeft {
+	display: none;
+}
 .howItWork .sectionText .textTitle {
 	color: #333;
 	margin-top: 22%;
@@ -336,7 +324,7 @@ aside a:focus, aside a:active {
 
 /*== team ==*/
 .sectionTeam {
-	background: #f2194c;
+	/*background: #f2194c;*/
 }
 .teamInner {
 	text-align: center;
